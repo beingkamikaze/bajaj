@@ -4,7 +4,7 @@ app.use(express.json());
 
 // POST method endpoint
 app.post("/bfhl", (req, res) => {
-  const requestData = req.body;
+  const requestData = req.body.data;
 
   // Extracting numbers and alphabets from the request data
   const numbers = requestData.filter((item) => typeof item === "number");
